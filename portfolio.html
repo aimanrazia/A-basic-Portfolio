@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiman Razia's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .skill-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            overflow: hidden;
+        }
+        .skill-fill {
+            height: 100%;
+            border-radius: 5px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .icon {
+            width: 30px; /* Adjusted size for icons */
+            height: 30px; /* Adjusted size for icons */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section using Bootstrap -->
+    <header class="bg-primary text-white text-center p-5">
+        <h1 class="display-4">Aiman Razia's Portfolio</h1>
+        <p class="lead">Welcome to my personal portfolio website!</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="py-10 text-center">
+        <img src="https://m.media-amazon.com/images/I/41IK02LISNL.jpg" alt="Profile Picture" class="profile-pic mb-3 mx-auto d-block">
+        <h2 class="text-2xl font-bold">About Me</h2>
+        <p class="mt-2">I am passionate about learning machine learning and developing innovative solutions. I enjoy creating engaging user experiences through my projects.</p>
+    </section>
+
+    <!-- Portfolio Section using Tailwind CSS -->
+    <section class="py-10 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-3">
+                        <img src="https://img.lovepik.com/free-png/20210926/lovepik-game-icon-png-image_401503004_wh1200.png" alt="Game Development Icon" class="icon mr-3" />
+                        <h3 class="text-xl font-semibold">Game Development</h3>
+                    </div>
+                    <p class="mt-2">Developed an interactive game using Unity, focusing on engaging gameplay and user experience.</p>
+                    <a href="https://github.com/aimanrazia/game-development_action" class="text-blue-500 hover:underline mt-3 inline-block">View Project</a>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2795/2795602.png" alt="Landing Page Icon" class="icon mr-3" />
+                        <h3 class="text-xl font-semibold">Landing Page</h3>
+                    </div>
+                    <p class="mt-2">Created a responsive landing page for a startup using <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="Bootstrap Logo" style="width: 20px; vertical-align: middle;" /> Bootstrap, focusing on conversion and user engagement.</p>
+                    <a href="https://github.com/aimanrazia/Codsoft/blob/main/landingpage_Task_1.html" class="text-blue-500 hover:underline mt-3 inline-block">View Project</a>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-3">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/calculator.png" alt="Calculator Icon" class="mr-3">
+                        <h3 class="text-xl font-semibold">Calculator</h3>
+                    </div>
+                    <p class="mt-2">Developed a simple yet functional calculator application using HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/aimanrazia/Codsoft/blob/main/calculator_task_3.html" class="text-blue-500 hover:underline mt-3 inline-block">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section using Tailwind CSS -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold">HTML</h4>
+                    <div class="skill-bar">
+                        <div class="skill-fill bg-blue-500" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold">CSS</h4>
+                    <div class="skill-bar">
+                        <div class="skill-fill bg-green-500" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold">C++</h4>
+                    <div class="skill-bar">
+                        <div class="skill-fill bg-red-500" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section using Bootstrap -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2023 Aiman Razia. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/aimanrazia" class="text-white mx-2">Github</a>
+            <a href="https://www.linkedin.com/in/aiman-razia/" class="text-white mx-2">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
